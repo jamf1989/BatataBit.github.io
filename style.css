@@ -413,23 +413,35 @@ main {
     color: #757575;
 }
 
-/* .plans-container--slider {
-    width: 100%;
-    min-width: 288px;
-    margin: auto;
-} */
+/* codigo para hacer el scroll horizontal las tarjetas: 
+
+-overflow-x: scroll; hace el scroll.
+si no se le pone la x se hace un scroll en 
+ambos sentidos.
+
+
+*/
+.plans-container--slider {
+    display: flex;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+
+}
 
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto;
+    margin: 50px 10px;
     background-color: var(--just-white);
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
     border-radius: 15px;
-
+    
 }
 
 .recomendado {
@@ -443,7 +455,7 @@ main {
     line-height: 1.4rem;
     color: var(--just-white);
     /* posisionando el contenedor en medio */
-    left: calc(50% - 50px);
+    left: calc(50% - 60px);
     top: -15px;
     /* posisionando el texto en medio */
     padding: 6px; 

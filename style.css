@@ -393,7 +393,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 387px;
-    background-image: url('./assets/imgs/bitcoinbaby\ 1.jpg');
+    background-image: url('./assets/imgs/bitcoinbaby.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -549,6 +549,7 @@ ambos sentidos.
  footer {
      display: flex;
      width: 100%;
+     min-width: 320px;
      height: 150px;
      background-color: var(--bitcoin-orange);
  }
